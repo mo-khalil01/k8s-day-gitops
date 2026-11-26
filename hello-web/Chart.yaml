@@ -1,0 +1,8 @@
+apiVersion: v2
+name: hello-web
+description: The hello-web sample app from the morning lab, packaged as a Helm chart
+type: application
+# Version of the chart itself. Bump it every time the chart changes.
+version: 0.1.0
+# Version of the app the chart deploys. Used as the default image tag.
+appVersion: "0.4"

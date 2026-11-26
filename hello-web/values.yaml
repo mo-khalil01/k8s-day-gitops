@@ -1,0 +1,28 @@
+# Default values for hello-web.
+# Anything here can be overridden with -f my-values.yaml or --set key=value.
+
+replicaCount: 2
+
+image:
+  repository: nginxdemos/hello
+  # Empty means "use the chart's appVersion". Never use latest.
+  tag: ""
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+# Injected as the GREETING env var, to prove values reach the Pod:
+#   kubectl exec deploy/<release>-hello-web -- printenv GREETING
+greeting: "Hello from Helm"
+
+resources:
+  requests:
+    cpu: 10m
+    memory: 32Mi
+  limits:
+    memory: 64Mi
+
+probes:
+  enabled: true

@@ -1,0 +1,9 @@
+# Overrides for the "prod" environment. Only list what differs from values.yaml.
+replicaCount: 4
+greeting: "Hello from prod"
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    memory: 128Mi
