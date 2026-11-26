@@ -1,7 +1,7 @@
 # Default values for hello-web.
 # Anything here can be overridden with -f my-values.yaml or --set key=value.
 
-replicaCount: 2
+replicaCount: 3
 
 image:
   repository: nginxdemos/hello
@@ -15,7 +15,7 @@ service:
 
 # Injected as the GREETING env var, to prove values reach the Pod:
 #   kubectl exec deploy/<release>-hello-web -- printenv GREETING
-greeting: "Hello from Helm"
+greeting: "Hello from Helm and Argo CD!"
 
 resources:
   requests:
