@@ -1,7 +1,7 @@
 # Default values for hello-web.
 # Anything here can be overridden with -f my-values.yaml or --set key=value.
 
-replicaCount: 3
+replicaCount: 2
 
 image:
   repository: nginxdemos/hello
