@@ -6,7 +6,7 @@ replicaCount: 3
 image:
   repository: nginxdemos/hello
   # Empty means "use the chart's appVersion". Never use latest.
-  tag: "0.4-plain-text"
+  tag: "does-not-exist"
   pullPolicy: IfNotPresent
 
 service:
